@@ -1,0 +1,305 @@
+\hypertarget{classComponent}{}\section{Component Class Reference}
+\label{classComponent}\index{Component@{Component}}
+
+
+{\ttfamily \#include $<$Component.\+h$>$}
+
+
+
+Inheritance diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component} ()
+\item 
+virtual \hyperlink{classComponent_a2e9aa4348314d981f05f67397ad2f872}{$\sim$\+Component} ()
+\item 
+virtual bool \hyperlink{classComponent_a50071a82183c4597f234d6be8d570f3d}{initialize} ()=0
+\item 
+virtual bool \hyperlink{classComponent_a1750ec58720764e1aa832928451df797}{register\+Subscriptions} ()=0
+\item 
+virtual bool \hyperlink{classComponent_a9c5b70940153b1fe30f82395d9a90cc8}{read\+Lines} ()=0
+\item 
+virtual void \hyperlink{classComponent_a6eb8fdbb1e666ea282c3cdfcfd210093}{receive\+Message} (\hyperlink{classMessage}{Message} $\ast$m)=0
+\item 
+virtual void \hyperlink{classComponent_a3ff2553195ad4f6be0d97cab89627098}{send\+Message} (\hyperlink{classMessage}{Message} $\ast$m)=0
+\item 
+virtual std\+::string \hyperlink{classComponent_adc0a839058f383cad16b66bdd013773a}{get\+Id} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{classComponent_a1935006c199410f3fcd44aadfb4c8fd6}{get\+My\+Subscriptions} ()
+\item 
+void \hyperlink{classComponent_a9bb4b091fadd2962e54afeca07a75924}{set\+Comedic\+Delay} (double delay)
+\item 
+int \hyperlink{classComponent_aa56ee5e543e97212eb334eb1c8fc9727}{get\+Comedic\+Delay} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classComponent_afdcb5d4ea092afe60818fe3d116f8c43}{id}
+\item 
+int \hyperlink{classComponent_a58225c6cfb807249e2aa386abe23bcb7}{comedic\+Delay}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classComponent_abcfcf60b25a608e476c868a6df83764c}{my\+Subscriptions}
+\item 
+std\+::deque$<$ std\+::string $>$ \hyperlink{classComponent_a9dfae8578328e11379a3c10b947655f2}{my\+Lines}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\subsubsection[{\texorpdfstring{Component()}{Component()}}]{\setlength{\rightskip}{0pt plus 5cm}Component\+::\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{}\label{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}
+\index{Component@{Component}!````~Component@{$\sim$\+Component}}
+\index{````~Component@{$\sim$\+Component}!Component@{Component}}
+\subsubsection[{\texorpdfstring{$\sim$\+Component()}{~Component()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Component\+::$\sim$\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classComponent_a2e9aa4348314d981f05f67397ad2f872}{}\label{classComponent_a2e9aa4348314d981f05f67397ad2f872}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a2e9aa4348314d981f05f67397ad2f872_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Component@{Component}!get\+Comedic\+Delay@{get\+Comedic\+Delay}}
+\index{get\+Comedic\+Delay@{get\+Comedic\+Delay}!Component@{Component}}
+\subsubsection[{\texorpdfstring{get\+Comedic\+Delay()}{getComedicDelay()}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::get\+Comedic\+Delay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classComponent_aa56ee5e543e97212eb334eb1c8fc9727}{}\label{classComponent_aa56ee5e543e97212eb334eb1c8fc9727}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_aa56ee5e543e97212eb334eb1c8fc9727_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Component@{Component}}
+\subsubsection[{\texorpdfstring{get\+Id()}{getId()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Component\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classComponent_adc0a839058f383cad16b66bdd013773a}{}\label{classComponent_adc0a839058f383cad16b66bdd013773a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_adc0a839058f383cad16b66bdd013773a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!get\+My\+Subscriptions@{get\+My\+Subscriptions}}
+\index{get\+My\+Subscriptions@{get\+My\+Subscriptions}!Component@{Component}}
+\subsubsection[{\texorpdfstring{get\+My\+Subscriptions()}{getMySubscriptions()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::vector$<$std\+::string$>$ Component\+::get\+My\+Subscriptions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classComponent_a1935006c199410f3fcd44aadfb4c8fd6}{}\label{classComponent_a1935006c199410f3fcd44aadfb4c8fd6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a1935006c199410f3fcd44aadfb4c8fd6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!initialize@{initialize}}
+\index{initialize@{initialize}!Component@{Component}}
+\subsubsection[{\texorpdfstring{initialize()=0}{initialize()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Component\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a50071a82183c4597f234d6be8d570f3d}{}\label{classComponent_a50071a82183c4597f234d6be8d570f3d}
+
+
+Implemented in \hyperlink{classAbbott_aa2fb7fd318c043acacfcd677217e32e0}{Abbott}, and \hyperlink{classCostello_a5506dbe129947a6c44777a5c9328a69b}{Costello}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a50071a82183c4597f234d6be8d570f3d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!read\+Lines@{read\+Lines}}
+\index{read\+Lines@{read\+Lines}!Component@{Component}}
+\subsubsection[{\texorpdfstring{read\+Lines()=0}{readLines()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Component\+::read\+Lines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a9c5b70940153b1fe30f82395d9a90cc8}{}\label{classComponent_a9c5b70940153b1fe30f82395d9a90cc8}
+
+
+Implemented in \hyperlink{classAbbott_acb89d36cc545e2c67afd7c460f24a524}{Abbott}, and \hyperlink{classCostello_acee9026f19f887e79ba5350d64899aff}{Costello}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a9c5b70940153b1fe30f82395d9a90cc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!receive\+Message@{receive\+Message}}
+\index{receive\+Message@{receive\+Message}!Component@{Component}}
+\subsubsection[{\texorpdfstring{receive\+Message(\+Message $\ast$m)=0}{receiveMessage(Message *m)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Component\+::receive\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a6eb8fdbb1e666ea282c3cdfcfd210093}{}\label{classComponent_a6eb8fdbb1e666ea282c3cdfcfd210093}
+
+
+Implemented in \hyperlink{classAbbott_a637bfa0de2ba690fc052a43482c49758}{Abbott}, and \hyperlink{classCostello_a22680e4e776f227066779ffeb2fe4149}{Costello}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a6eb8fdbb1e666ea282c3cdfcfd210093_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!register\+Subscriptions@{register\+Subscriptions}}
+\index{register\+Subscriptions@{register\+Subscriptions}!Component@{Component}}
+\subsubsection[{\texorpdfstring{register\+Subscriptions()=0}{registerSubscriptions()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Component\+::register\+Subscriptions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a1750ec58720764e1aa832928451df797}{}\label{classComponent_a1750ec58720764e1aa832928451df797}
+
+
+Implemented in \hyperlink{classAbbott_a3bd834168c663fa1f0260b244f6b45bf}{Abbott}, and \hyperlink{classCostello_af2e0bc64a501e67e907429a6fbf7ac37}{Costello}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a1750ec58720764e1aa832928451df797_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!Component@{Component}}
+\subsubsection[{\texorpdfstring{send\+Message(\+Message $\ast$m)=0}{sendMessage(Message *m)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Component\+::send\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classComponent_a3ff2553195ad4f6be0d97cab89627098}{}\label{classComponent_a3ff2553195ad4f6be0d97cab89627098}
+
+
+Implemented in \hyperlink{classAbbott_a44fbdfc12860101771150385170367ce}{Abbott}, and \hyperlink{classCostello_a223ac219c18cacec430661139b2bf742}{Costello}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a3ff2553195ad4f6be0d97cab89627098_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Component@{Component}!set\+Comedic\+Delay@{set\+Comedic\+Delay}}
+\index{set\+Comedic\+Delay@{set\+Comedic\+Delay}!Component@{Component}}
+\subsubsection[{\texorpdfstring{set\+Comedic\+Delay(double delay)}{setComedicDelay(double delay)}}]{\setlength{\rightskip}{0pt plus 5cm}void Component\+::set\+Comedic\+Delay (
+\begin{DoxyParamCaption}
+\item[{double}]{delay}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classComponent_a9bb4b091fadd2962e54afeca07a75924}{}\label{classComponent_a9bb4b091fadd2962e54afeca07a75924}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent_a9bb4b091fadd2962e54afeca07a75924_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Component@{Component}!comedic\+Delay@{comedic\+Delay}}
+\index{comedic\+Delay@{comedic\+Delay}!Component@{Component}}
+\subsubsection[{\texorpdfstring{comedic\+Delay}{comedicDelay}}]{\setlength{\rightskip}{0pt plus 5cm}int Component\+::comedic\+Delay}\hypertarget{classComponent_a58225c6cfb807249e2aa386abe23bcb7}{}\label{classComponent_a58225c6cfb807249e2aa386abe23bcb7}
+\index{Component@{Component}!id@{id}}
+\index{id@{id}!Component@{Component}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Component\+::id}\hypertarget{classComponent_afdcb5d4ea092afe60818fe3d116f8c43}{}\label{classComponent_afdcb5d4ea092afe60818fe3d116f8c43}
+\index{Component@{Component}!my\+Lines@{my\+Lines}}
+\index{my\+Lines@{my\+Lines}!Component@{Component}}
+\subsubsection[{\texorpdfstring{my\+Lines}{myLines}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::deque$<$std\+::string$>$ Component\+::my\+Lines}\hypertarget{classComponent_a9dfae8578328e11379a3c10b947655f2}{}\label{classComponent_a9dfae8578328e11379a3c10b947655f2}
+\index{Component@{Component}!my\+Subscriptions@{my\+Subscriptions}}
+\index{my\+Subscriptions@{my\+Subscriptions}!Component@{Component}}
+\subsubsection[{\texorpdfstring{my\+Subscriptions}{mySubscriptions}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ Component\+::my\+Subscriptions}\hypertarget{classComponent_abcfcf60b25a608e476c868a6df83764c}{}\label{classComponent_abcfcf60b25a608e476c868a6df83764c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Component_8h}{Component.\+h}\end{DoxyCompactItemize}

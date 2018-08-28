@@ -1,0 +1,7 @@
+<map id="Component::~Component" name="Component::~Component">
+<area shape="rect" id="node2" href="$classComponent.html#a50071a82183c4597f234d6be8d570f3d" title="Component::initialize" alt="" coords="263,5,407,32"/>
+<area shape="rect" id="node3" href="$classComponent.html#a1750ec58720764e1aa832928451df797" title="Component::registerSubscriptions" alt="" coords="225,56,444,83"/>
+<area shape="rect" id="node4" href="$classComponent.html#a9c5b70940153b1fe30f82395d9a90cc8" title="Component::readLines" alt="" coords="258,107,411,133"/>
+<area shape="rect" id="node5" href="$classComponent.html#a6eb8fdbb1e666ea282c3cdfcfd210093" title="Component::receiveMessage" alt="" coords="239,157,431,184"/>
+<area shape="rect" id="node6" href="$classComponent.html#a3ff2553195ad4f6be0d97cab89627098" title="Component::sendMessage" alt="" coords="245,208,424,235"/>
+</map>

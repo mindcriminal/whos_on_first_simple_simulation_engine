@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8cpp.html#a937261283b180102d5623eb1f66c572f" title="buildComponents" alt="" coords="133,5,255,32"/>
+<area shape="rect" id="node4" href="$classEngine.html#a1f4c7b742acf359b65bbd23ebe992eb0" title="Engine::initialize" alt="" coords="135,56,253,83"/>
+<area shape="rect" id="node5" href="$classEngine.html#af4c9d5852c93039cfcc6d90cabae5e43" title="Engine::registerComponent" alt="" coords="104,107,284,133"/>
+<area shape="rect" id="node9" href="$classEngine.html#a1ec215a11a8703c09f61e57e23ea41e8" title="Engine::execute" alt="" coords="136,233,252,260"/>
+<area shape="rect" id="node3" href="$classComponentFactory.html#aced98d8c47c6ba19775124b7c46a9724" title="ComponentFactory::buildComponent" alt="" coords="332,5,567,32"/>
+<area shape="rect" id="node6" href="$classComponent.html#adc0a839058f383cad16b66bdd013773a" title="Component::getId" alt="" coords="386,56,513,83"/>
+<area shape="rect" id="node7" href="$classComponent.html#a9bb4b091fadd2962e54afeca07a75924" title="Component::setComedicDelay" alt="" coords="349,107,550,133"/>
+<area shape="rect" id="node8" href="$classComponent.html#a1935006c199410f3fcd44aadfb4c8fd6" title="Component::getMySubscriptions" alt="" coords="343,157,555,184"/>
+<area shape="rect" id="node10" href="$classMessageQueue.html#a71c0a4ca5d2794d5b538f138ab9eb233" title="MessageQueue::getInstance" alt="" coords="355,208,544,235"/>
+<area shape="rect" id="node12" href="$classMessage.html#a9c3697e07b26cfa54cfda305ddf80848" title="Message::getSendTime" alt="" coords="369,259,529,285"/>
+<area shape="rect" id="node13" href="$classEngine.html#a7cc3f28b369973bd0e7e43017ef7ce6f" title="Engine::sendMessageToSubscribers" alt="" coords="332,309,567,336"/>
+<area shape="rect" id="node11" href="$classMessageQueue.html#a006069f4b83d2372c989c52784fac5de" title="MessageQueue::MessageQueue" alt="" coords="615,208,827,235"/>
+<area shape="rect" id="node14" href="$classMessage.html#a053d967034aa63b40ae5f1a270596fc8" title="Message::getTopic" alt="" coords="654,309,787,336"/>
+</map>

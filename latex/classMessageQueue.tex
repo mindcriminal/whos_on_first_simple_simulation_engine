@@ -1,0 +1,149 @@
+\hypertarget{classMessageQueue}{}\section{Message\+Queue Class Reference}
+\label{classMessageQueue}\index{Message\+Queue@{Message\+Queue}}
+
+
+{\ttfamily \#include $<$Message\+Queue.\+h$>$}
+
+
+
+Collaboration diagram for Message\+Queue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classMessageQueue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMessageQueue_a6fd77711ec26f191dd4df98dbdd21f39}{send\+Message} (\hyperlink{classMessage}{Message} $\ast$m)
+\item 
+\hyperlink{classMessage}{Message} $\ast$ \hyperlink{classMessageQueue_ab401b6cf170a5c348e0a2b1b66fa5f08}{pop\+Message} ()
+\item 
+bool \hyperlink{classMessageQueue_aca7e45700a795dba7183a82173285d29}{is\+Empty} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMessageQueue}{Message\+Queue} $\ast$ \hyperlink{classMessageQueue_a71c0a4ca5d2794d5b538f138ab9eb233}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMessageQueue_a006069f4b83d2372c989c52784fac5de}{Message\+Queue} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::deque$<$ \hyperlink{classMessage}{Message} $\ast$ $>$ \hyperlink{classMessageQueue_aa8e5f185bb69e2256ccfa5e24fcf29ac}{message\+Queue}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMessageQueue}{Message\+Queue} $\ast$ \hyperlink{classMessageQueue_aca31148e46272baefe0569ded478c8e1}{instance} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Message\+Queue@{Message\+Queue}!Message\+Queue@{Message\+Queue}}
+\index{Message\+Queue@{Message\+Queue}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{Message\+Queue()}{MessageQueue()}}]{\setlength{\rightskip}{0pt plus 5cm}Message\+Queue\+::\+Message\+Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMessageQueue_a006069f4b83d2372c989c52784fac5de}{}\label{classMessageQueue_a006069f4b83d2372c989c52784fac5de}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessageQueue_a006069f4b83d2372c989c52784fac5de_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Message\+Queue@{Message\+Queue}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{get\+Instance()}{getInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\+Queue} $\ast$ Message\+Queue\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classMessageQueue_a71c0a4ca5d2794d5b538f138ab9eb233}{}\label{classMessageQueue_a71c0a4ca5d2794d5b538f138ab9eb233}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessageQueue_a71c0a4ca5d2794d5b538f138ab9eb233_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessageQueue_a71c0a4ca5d2794d5b538f138ab9eb233_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Message\+Queue@{Message\+Queue}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{is\+Empty()}{isEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Message\+Queue\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessageQueue_aca7e45700a795dba7183a82173285d29}{}\label{classMessageQueue_aca7e45700a795dba7183a82173285d29}
+\index{Message\+Queue@{Message\+Queue}!pop\+Message@{pop\+Message}}
+\index{pop\+Message@{pop\+Message}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{pop\+Message()}{popMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message} $\ast$ Message\+Queue\+::pop\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMessageQueue_ab401b6cf170a5c348e0a2b1b66fa5f08}{}\label{classMessageQueue_ab401b6cf170a5c348e0a2b1b66fa5f08}
+\index{Message\+Queue@{Message\+Queue}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{send\+Message(\+Message $\ast$m)}{sendMessage(Message *m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Message\+Queue\+::send\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classMessageQueue_a6fd77711ec26f191dd4df98dbdd21f39}{}\label{classMessageQueue_a6fd77711ec26f191dd4df98dbdd21f39}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessageQueue_a6fd77711ec26f191dd4df98dbdd21f39_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Message\+Queue@{Message\+Queue}!instance@{instance}}
+\index{instance@{instance}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{instance}{instance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\+Queue} $\ast$ Message\+Queue\+::instance = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classMessageQueue_aca31148e46272baefe0569ded478c8e1}{}\label{classMessageQueue_aca31148e46272baefe0569ded478c8e1}
+\index{Message\+Queue@{Message\+Queue}!message\+Queue@{message\+Queue}}
+\index{message\+Queue@{message\+Queue}!Message\+Queue@{Message\+Queue}}
+\subsubsection[{\texorpdfstring{message\+Queue}{messageQueue}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::deque$<${\bf Message}$\ast$$>$ Message\+Queue\+::message\+Queue\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMessageQueue_aa8e5f185bb69e2256ccfa5e24fcf29ac}{}\label{classMessageQueue_aa8e5f185bb69e2256ccfa5e24fcf29ac}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{MessageQueue_8h}{Message\+Queue.\+h}\item 
+src/\hyperlink{MessageQueue_8cpp}{Message\+Queue.\+cpp}\end{DoxyCompactItemize}

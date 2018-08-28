@@ -1,0 +1,202 @@
+\hypertarget{classEngine}{}\section{Engine Class Reference}
+\label{classEngine}\index{Engine@{Engine}}
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+
+
+Collaboration diagram for Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine} ()
+\item 
+\hyperlink{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine} ()
+\item 
+bool \hyperlink{classEngine_a1f4c7b742acf359b65bbd23ebe992eb0}{initialize} ()
+\item 
+void \hyperlink{classEngine_af4c9d5852c93039cfcc6d90cabae5e43}{register\+Component} (\hyperlink{classComponent}{Component} $\ast$c)
+\item 
+void \hyperlink{classEngine_a7cc3f28b369973bd0e7e43017ef7ce6f}{send\+Message\+To\+Subscribers} (\hyperlink{classMessage}{Message} $\ast$m)
+\item 
+void \hyperlink{classEngine_a1ec215a11a8703c09f61e57e23ea41e8}{execute} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classComponent}{Component} $\ast$ $>$ \hyperlink{classEngine_a82b1eb83c3d3c02f19cbcad2d7a22817}{registered\+Components}
+\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ \hyperlink{classComponent}{Component} $\ast$ $>$ $>$ \hyperlink{classEngine_ab1d0191f8490a4c2edf9f3945ba91434}{topic\+Component\+Map}
+\item 
+double \hyperlink{classEngine_a088cebe70ee006aae3fa4a5b87bb8e36}{comedic\+Delay}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{Engine()}{Engine()}}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{}\label{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}
+\index{Engine@{Engine}!````~Engine@{$\sim$\+Engine}}
+\index{````~Engine@{$\sim$\+Engine}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{$\sim$\+Engine()}{~Engine()}}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+::$\sim$\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}{}\label{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEngine_a8ef7030a089ecb30bbfcb9e43094717a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Engine@{Engine}!execute@{execute}}
+\index{execute@{execute}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classEngine_a1ec215a11a8703c09f61e57e23ea41e8}{}\label{classEngine_a1ec215a11a8703c09f61e57e23ea41e8}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEngine_a1ec215a11a8703c09f61e57e23ea41e8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classEngine_a1ec215a11a8703c09f61e57e23ea41e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Engine@{Engine}!initialize@{initialize}}
+\index{initialize@{initialize}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Engine\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classEngine_a1f4c7b742acf359b65bbd23ebe992eb0}{}\label{classEngine_a1f4c7b742acf359b65bbd23ebe992eb0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classEngine_a1f4c7b742acf359b65bbd23ebe992eb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Engine@{Engine}!register\+Component@{register\+Component}}
+\index{register\+Component@{register\+Component}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{register\+Component(\+Component $\ast$c)}{registerComponent(Component *c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::register\+Component (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classEngine_af4c9d5852c93039cfcc6d90cabae5e43}{}\label{classEngine_af4c9d5852c93039cfcc6d90cabae5e43}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEngine_af4c9d5852c93039cfcc6d90cabae5e43_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classEngine_af4c9d5852c93039cfcc6d90cabae5e43_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Engine@{Engine}!send\+Message\+To\+Subscribers@{send\+Message\+To\+Subscribers}}
+\index{send\+Message\+To\+Subscribers@{send\+Message\+To\+Subscribers}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{send\+Message\+To\+Subscribers(\+Message $\ast$m)}{sendMessageToSubscribers(Message *m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::send\+Message\+To\+Subscribers (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} $\ast$}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classEngine_a7cc3f28b369973bd0e7e43017ef7ce6f}{}\label{classEngine_a7cc3f28b369973bd0e7e43017ef7ce6f}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEngine_a7cc3f28b369973bd0e7e43017ef7ce6f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEngine_a7cc3f28b369973bd0e7e43017ef7ce6f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Engine@{Engine}!comedic\+Delay@{comedic\+Delay}}
+\index{comedic\+Delay@{comedic\+Delay}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{comedic\+Delay}{comedicDelay}}]{\setlength{\rightskip}{0pt plus 5cm}double Engine\+::comedic\+Delay\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classEngine_a088cebe70ee006aae3fa4a5b87bb8e36}{}\label{classEngine_a088cebe70ee006aae3fa4a5b87bb8e36}
+\index{Engine@{Engine}!registered\+Components@{registered\+Components}}
+\index{registered\+Components@{registered\+Components}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{registered\+Components}{registeredComponents}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Component}$\ast$$>$ Engine\+::registered\+Components\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classEngine_a82b1eb83c3d3c02f19cbcad2d7a22817}{}\label{classEngine_a82b1eb83c3d3c02f19cbcad2d7a22817}
+\index{Engine@{Engine}!topic\+Component\+Map@{topic\+Component\+Map}}
+\index{topic\+Component\+Map@{topic\+Component\+Map}!Engine@{Engine}}
+\subsubsection[{\texorpdfstring{topic\+Component\+Map}{topicComponentMap}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, std\+::vector$<${\bf Component}$\ast$$>$ $>$ Engine\+::topic\+Component\+Map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classEngine_ab1d0191f8490a4c2edf9f3945ba91434}{}\label{classEngine_ab1d0191f8490a4c2edf9f3945ba91434}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Engine_8h}{Engine.\+h}\item 
+src/\hyperlink{Engine_8cpp}{Engine.\+cpp}\end{DoxyCompactItemize}

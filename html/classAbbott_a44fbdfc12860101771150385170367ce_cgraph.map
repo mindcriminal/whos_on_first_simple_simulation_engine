@@ -1,0 +1,5 @@
+<map id="Abbott::sendMessage" name="Abbott::sendMessage">
+<area shape="rect" id="node2" href="$classMessageQueue.html#a71c0a4ca5d2794d5b538f138ab9eb233" title="MessageQueue::getInstance" alt="" coords="209,5,399,32"/>
+<area shape="rect" id="node4" href="$classMessageQueue.html#a6fd77711ec26f191dd4df98dbdd21f39" title="MessageQueue::sendMessage" alt="" coords="203,56,405,83"/>
+<area shape="rect" id="node3" href="$classMessageQueue.html#a006069f4b83d2372c989c52784fac5de" title="MessageQueue::MessageQueue" alt="" coords="453,5,665,32"/>
+</map>

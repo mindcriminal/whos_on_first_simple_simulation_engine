@@ -1,0 +1,9 @@
+<map id="MessageQueue::sendMessage" name="MessageQueue::sendMessage">
+<area shape="rect" id="node2" href="$classAbbott.html#a44fbdfc12860101771150385170367ce" title="Abbott::sendMessage" alt="" coords="261,52,410,78"/>
+<area shape="rect" id="node6" href="$classCostello.html#a223ac219c18cacec430661139b2bf742" title="Costello::sendMessage" alt="" coords="256,128,415,154"/>
+<area shape="rect" id="node3" href="$classAbbott.html#a2a51034c773a5acf2e5fd002a1f4fd0c" title="Abbott::~Abbott" alt="" coords="694,26,809,53"/>
+<area shape="rect" id="node4" href="$classAbbott.html#aa2fb7fd318c043acacfcd677217e32e0" title="Abbott::initialize" alt="" coords="492,26,607,53"/>
+<area shape="rect" id="node5" href="$classAbbott.html#a637bfa0de2ba690fc052a43482c49758" title="Abbott::receiveMessage" alt="" coords="468,77,631,104"/>
+<area shape="rect" id="node7" href="$classCostello.html#a3bdb91b8211940f1fdfd8a2269d00304" title="Costello::~Costello" alt="" coords="684,153,819,180"/>
+<area shape="rect" id="node8" href="$classCostello.html#a22680e4e776f227066779ffeb2fe4149" title="Costello::receiveMessage" alt="" coords="463,178,636,205"/>
+</map>

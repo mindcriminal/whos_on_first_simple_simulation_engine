@@ -1,0 +1,3 @@
+<map id="CostelloMessage" name="CostelloMessage">
+<area shape="rect" id="node2" href="$classMessage.html" title="{Message\n|+ topic\l+ myLine\l+ sendTime\l|+ Message()\l+ Message()\l+ ~Message()\l+ getTopic()\l+ getLine()\l+ getSendTime()\l+ setTopic()\l+ setSendTime()\l+ setLine()\l+ deliverLine()\l}" alt="" coords="21,5,140,244"/>
+</map>

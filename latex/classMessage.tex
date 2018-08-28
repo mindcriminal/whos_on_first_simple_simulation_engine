@@ -1,0 +1,201 @@
+\hypertarget{classMessage}{}\section{Message Class Reference}
+\label{classMessage}\index{Message@{Message}}
+
+
+{\ttfamily \#include $<$Message.\+h$>$}
+
+
+
+Inheritance diagram for Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classMessage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classMessage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMessage_a4fc4f717b634e66070366cb7722d7761}{Message} ()
+\item 
+\hyperlink{classMessage_a5487121f5fff2c5f3a2b001036b6e329}{Message} (std\+::string t, std\+::time\+\_\+t st, std\+::string line)
+\item 
+virtual \hyperlink{classMessage_acee46f6aed7e93e244460565079a5c48}{$\sim$\+Message} ()
+\item 
+virtual std\+::string \hyperlink{classMessage_a053d967034aa63b40ae5f1a270596fc8}{get\+Topic} ()
+\item 
+virtual std\+::string \hyperlink{classMessage_a4eebc4985167f56e740001f806b811f8}{get\+Line} ()
+\item 
+virtual std\+::time\+\_\+t \hyperlink{classMessage_a9c3697e07b26cfa54cfda305ddf80848}{get\+Send\+Time} ()
+\item 
+void \hyperlink{classMessage_a2a99db182d832269b3f712696b33e16e}{set\+Topic} (std\+::string t)
+\item 
+void \hyperlink{classMessage_a568b90852d37ff905d60fcbbaf9bab66}{set\+Send\+Time} (std\+::time\+\_\+t t)
+\item 
+void \hyperlink{classMessage_a31d8d27e274c79ae3cdaa9bca42fc407}{set\+Line} (std\+::string l)
+\item 
+virtual void \hyperlink{classMessage_a94ec39ab936398be112ec11eff7528b6}{deliver\+Line} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classMessage_a445d16a4d74aae5900362cf988c6b9d2}{topic}
+\item 
+std\+::string \hyperlink{classMessage_ab0da34659dcb20a9dbdb6cfc2a576789}{my\+Line}
+\item 
+std\+::time\+\_\+t \hyperlink{classMessage_a45f77ab2cb5396474edb13ff74b93a14}{send\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{\texorpdfstring{Message()}{Message()}}]{\setlength{\rightskip}{0pt plus 5cm}Message\+::\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessage_a4fc4f717b634e66070366cb7722d7761}{}\label{classMessage_a4fc4f717b634e66070366cb7722d7761}
+\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\subsubsection[{\texorpdfstring{Message(std\+::string t, std\+::time\+\_\+t st, std\+::string line)}{Message(std::string t, std::time_t st, std::string line)}}]{\setlength{\rightskip}{0pt plus 5cm}Message\+::\+Message (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{t, }
+\item[{std\+::time\+\_\+t}]{st, }
+\item[{std\+::string}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessage_a5487121f5fff2c5f3a2b001036b6e329}{}\label{classMessage_a5487121f5fff2c5f3a2b001036b6e329}
+\index{Message@{Message}!````~Message@{$\sim$\+Message}}
+\index{````~Message@{$\sim$\+Message}!Message@{Message}}
+\subsubsection[{\texorpdfstring{$\sim$\+Message()}{~Message()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Message\+::$\sim$\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMessage_acee46f6aed7e93e244460565079a5c48}{}\label{classMessage_acee46f6aed7e93e244460565079a5c48}
+
+
+\subsection{Member Function Documentation}
+\index{Message@{Message}!deliver\+Line@{deliver\+Line}}
+\index{deliver\+Line@{deliver\+Line}!Message@{Message}}
+\subsubsection[{\texorpdfstring{deliver\+Line()}{deliverLine()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Message\+::deliver\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMessage_a94ec39ab936398be112ec11eff7528b6}{}\label{classMessage_a94ec39ab936398be112ec11eff7528b6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessage_a94ec39ab936398be112ec11eff7528b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Message@{Message}!get\+Line@{get\+Line}}
+\index{get\+Line@{get\+Line}!Message@{Message}}
+\subsubsection[{\texorpdfstring{get\+Line()}{getLine()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Message\+::get\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMessage_a4eebc4985167f56e740001f806b811f8}{}\label{classMessage_a4eebc4985167f56e740001f806b811f8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessage_a4eebc4985167f56e740001f806b811f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Message@{Message}!get\+Send\+Time@{get\+Send\+Time}}
+\index{get\+Send\+Time@{get\+Send\+Time}!Message@{Message}}
+\subsubsection[{\texorpdfstring{get\+Send\+Time()}{getSendTime()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::time\+\_\+t Message\+::get\+Send\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMessage_a9c3697e07b26cfa54cfda305ddf80848}{}\label{classMessage_a9c3697e07b26cfa54cfda305ddf80848}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessage_a9c3697e07b26cfa54cfda305ddf80848_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Message@{Message}!get\+Topic@{get\+Topic}}
+\index{get\+Topic@{get\+Topic}!Message@{Message}}
+\subsubsection[{\texorpdfstring{get\+Topic()}{getTopic()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Message\+::get\+Topic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classMessage_a053d967034aa63b40ae5f1a270596fc8}{}\label{classMessage_a053d967034aa63b40ae5f1a270596fc8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMessage_a053d967034aa63b40ae5f1a270596fc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Message@{Message}!set\+Line@{set\+Line}}
+\index{set\+Line@{set\+Line}!Message@{Message}}
+\subsubsection[{\texorpdfstring{set\+Line(std\+::string l)}{setLine(std::string l)}}]{\setlength{\rightskip}{0pt plus 5cm}void Message\+::set\+Line (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessage_a31d8d27e274c79ae3cdaa9bca42fc407}{}\label{classMessage_a31d8d27e274c79ae3cdaa9bca42fc407}
+\index{Message@{Message}!set\+Send\+Time@{set\+Send\+Time}}
+\index{set\+Send\+Time@{set\+Send\+Time}!Message@{Message}}
+\subsubsection[{\texorpdfstring{set\+Send\+Time(std\+::time\+\_\+t t)}{setSendTime(std::time_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Message\+::set\+Send\+Time (
+\begin{DoxyParamCaption}
+\item[{std\+::time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessage_a568b90852d37ff905d60fcbbaf9bab66}{}\label{classMessage_a568b90852d37ff905d60fcbbaf9bab66}
+\index{Message@{Message}!set\+Topic@{set\+Topic}}
+\index{set\+Topic@{set\+Topic}!Message@{Message}}
+\subsubsection[{\texorpdfstring{set\+Topic(std\+::string t)}{setTopic(std::string t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Message\+::set\+Topic (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classMessage_a2a99db182d832269b3f712696b33e16e}{}\label{classMessage_a2a99db182d832269b3f712696b33e16e}
+
+
+\subsection{Member Data Documentation}
+\index{Message@{Message}!my\+Line@{my\+Line}}
+\index{my\+Line@{my\+Line}!Message@{Message}}
+\subsubsection[{\texorpdfstring{my\+Line}{myLine}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Message\+::my\+Line}\hypertarget{classMessage_ab0da34659dcb20a9dbdb6cfc2a576789}{}\label{classMessage_ab0da34659dcb20a9dbdb6cfc2a576789}
+\index{Message@{Message}!send\+Time@{send\+Time}}
+\index{send\+Time@{send\+Time}!Message@{Message}}
+\subsubsection[{\texorpdfstring{send\+Time}{sendTime}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::time\+\_\+t Message\+::send\+Time}\hypertarget{classMessage_a45f77ab2cb5396474edb13ff74b93a14}{}\label{classMessage_a45f77ab2cb5396474edb13ff74b93a14}
+\index{Message@{Message}!topic@{topic}}
+\index{topic@{topic}!Message@{Message}}
+\subsubsection[{\texorpdfstring{topic}{topic}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Message\+::topic}\hypertarget{classMessage_a445d16a4d74aae5900362cf988c6b9d2}{}\label{classMessage_a445d16a4d74aae5900362cf988c6b9d2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Message_8h}{Message.\+h}\end{DoxyCompactItemize}
