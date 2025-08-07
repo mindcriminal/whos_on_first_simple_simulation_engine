@@ -70,11 +70,11 @@ void Engine::sendMessageToSubscribers( Message* m )
             for( auto subscribingComponents : search->second )
             {
                 subscribingComponents->receiveMessage( m );
-
-                // termination of message memory
-                delete m;
-                m = 0;
             }
+
+            // termination of message memory
+            delete m;
+            m = 0;
         }
         else
         {

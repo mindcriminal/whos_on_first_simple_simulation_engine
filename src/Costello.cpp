@@ -1,4 +1,6 @@
 #include <fstream>
+#include <iostream>
+#include <cstdlib>
 #include <chrono>
 #include "CostelloMessage.h"
 #include "Costello.h"
@@ -65,10 +67,6 @@ void Costello::receiveMessage( Message* m )
 {
     // print the line
     m->deliverLine();
-
-    // speak the line
-    std::string command = "espeak -ven-us+m1 \"" + m->getLine() + "\" &";
-    system( command.c_str() );
 
     // send next line of dialog if there are still lines
     // origination of message memory

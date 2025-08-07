@@ -2,24 +2,15 @@
 #include <iostream>
 #include <cstdlib>
 #include <chrono>
-#include "AbbottMessage.h"
-#include "Abbott.h"
+#include "JoeMessage.h"
+#include "Joe.h"
 #include "MessageQueue.h"
 
-bool Abbott::initialize()
+bool Joe::initialize()
 {
     bool success( true );
 
-    // Abbott starts the script!
-    if( registerSubscriptions() && readLines() )
-    {
-        // send first line of dialog
-        // origination of message
-        AbbottMessage* firstLine = new AbbottMessage( 0, myLines.front() );
-        sendMessage( firstLine );
-        myLines.pop_front();
-    }
-    else
+    if( !registerSubscriptions() || !readLines() )
     {
         success = false;
     }
@@ -27,17 +18,17 @@ bool Abbott::initialize()
     return success;
 }
 
-bool Abbott::registerSubscriptions()
+bool Joe::registerSubscriptions()
 {
     bool success( true );
 
     // read topic subscriptions
     std::ifstream in;
-    in.open( "./input/abbott.sub", std::ifstream::in );
+    in.open( "./input/joe.sub", std::ifstream::in );
 
     if( !in )
     {
-        std::cout << "Cannot open abbott subscriptions file!" << std::endl;
+        std::cout << "Cannot open joe subscriptions file!" << std::endl;
         success = false;
     }
     else
@@ -46,7 +37,7 @@ bool Abbott::registerSubscriptions()
         std::string subscriptionTopic;
         while ( std::getline( in, subscriptionTopic ) )
         {
-            std::cout << "Abbott subscribed to " << subscriptionTopic << std::endl;
+            std::cout << "Joe subscribed to " << subscriptionTopic << std::endl;
             mySubscriptions.push_back( subscriptionTopic );
         }
     }
@@ -54,17 +45,17 @@ bool Abbott::registerSubscriptions()
     return success;
 }
 
-bool Abbott::readLines()
+bool Joe::readLines()
 {
     bool success( true );
 
     // read lines
     std::ifstream in;
-    in.open( "./input/abbott.lines", std::ifstream::in );
+    in.open( "./input/joe.lines", std::ifstream::in );
 
     if( !in )
     {
-        std::cout << "Cannot open abbott lines file!" << std::endl;
+        std::cout << "Cannot open joe lines file!" << std::endl;
         success = false;
     }
     else
@@ -79,7 +70,7 @@ bool Abbott::readLines()
     return success;
 }
 
-void Abbott::receiveMessage( Message* m )
+void Joe::receiveMessage( Message* m )
 {
     // print the line
     m->deliverLine();
@@ -88,8 +79,8 @@ void Abbott::receiveMessage( Message* m )
     // origination of message memory
     if( myLines.begin() != myLines.end() )
     {
-        AbbottMessage* nextLine = new AbbottMessage( 
-                std::chrono::system_clock::to_time_t(std::chrono::system_clock::now() + std::chrono::seconds( getComedicDelay() )), 
+        JoeMessage* nextLine = new JoeMessage(
+                std::chrono::system_clock::to_time_t(std::chrono::system_clock::now() + std::chrono::seconds( getComedicDelay() )),
                 myLines.front() );
 
         sendMessage( nextLine );
@@ -97,8 +88,7 @@ void Abbott::receiveMessage( Message* m )
     }
 }
 
-void Abbott::sendMessage( Message* m )
+void Joe::sendMessage( Message* m )
 {
     MessageQueue::getInstance()->sendMessage( m );
-
 }

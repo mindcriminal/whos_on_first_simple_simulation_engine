@@ -1,6 +1,7 @@
 #include "ComponentFactory.h"
 #include "Abbott.h"
 #include "Costello.h"
+#include "Joe.h"
 #include <iostream>
 
 Component* ComponentFactory::buildComponent( const std::string &type )
@@ -14,6 +15,10 @@ Component* ComponentFactory::buildComponent( const std::string &type )
     else if( type == "costello" )
     {
         newComponent = new Costello();
+    }
+    else if( type == "joe" )
+    {
+        newComponent = new Joe();
     }
     else
     {
