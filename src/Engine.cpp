@@ -88,12 +88,7 @@ void Engine::execute()
     while( !MessageQueue::getInstance()->isEmpty() )
     {
         Message * m( MessageQueue::getInstance()->popMessage() );
-        while( std::chrono::system_clock::to_time_t( std::chrono::system_clock::now() ) <= 
-                m->getSendTime() )
-        {
-            // Sleep until its time to send this message
-            std::this_thread::sleep_for( std::chrono::seconds(1) );
-        }
+        std::this_thread::sleep_until( std::chrono::system_clock::from_time_t( m->getSendTime() ) );
         
         // Time to send!
         sendMessageToSubscribers( m );
